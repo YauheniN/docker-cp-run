@@ -1,5 +1,4 @@
 import { expect, test } from '@playwright/test';
-
         
 test('First_test_spec', async ({ page }) => {
         await page.goto('https://playwright.dev/docs/cli')
