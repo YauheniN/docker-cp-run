@@ -1,0 +1,26 @@
+{
+  "name": "playwright-docker-cp-run",
+  "version": "1.0.0",
+  "description": "A project for using playwright for end-to-end testing purpose with docker after generated specification",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YauheniN/playwright-docker-cp-run.git"
+  },
+  "author": "YauheniN",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YauheniN/playwright-docker-cp-run/issues"
+  },
+  "homepage": "https://github.com/YauheniN/playwright-docker-cp-run#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.25.1",
+    "@types/node": "^18.7.14",
+    "playwright": "^1.25.1",
+    "toml": "^3.0.0",
+    "typescript": "^4.8.2"
+  }
+}
