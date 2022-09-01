@@ -17,6 +17,7 @@
   },
   "scripts": {
    "test": "playwright test",
+   "test-list-report": "playwright test --reporter=list",
    "test-html-report": "playwright test --reporter=html",
    "test-json-report": "PLAYWRIGHT_JSON_OUTPUT_NAME=test-results.json playwright test --browser=chromium --reporter=json"
   },

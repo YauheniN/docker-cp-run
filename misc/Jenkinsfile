@@ -1,0 +1,10 @@
+node {
+   stage('test') {
+     def myTestContainer = docker.image('mcr.microsoft.com/playwright:focal')
+     myTestContainer.pull()
+     myTestContainer.inside {
+       sh 'npm install'
+       sh 'npm test'
+     }
+   }
+}                                          

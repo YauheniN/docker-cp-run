@@ -13,6 +13,7 @@ const config: PlaywrightTestConfig = {
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: [
     ['html', { open: 'never' }],
+	['list'],
     [process.env.CI ? 'dot' : 'list'],
     ['json', {  outputFile: 'test-results.json' }]
   ],
