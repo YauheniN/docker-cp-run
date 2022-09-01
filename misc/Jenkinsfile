@@ -1,10 +1,9 @@
-node {
-   stage('test') {
-     def myTestContainer = docker.image('mcr.microsoft.com/playwright:focal')
-     myTestContainer.pull()
-     myTestContainer.inside {
+pipeline {
+  agent { docker { image 'mcr.microsoft.com/playwright:focal' } } 
+  stages {  
+    stage('test') {
        sh 'npm install'
        sh 'npm test'
-     }
-   }
+    }
+  }
 }                                          
