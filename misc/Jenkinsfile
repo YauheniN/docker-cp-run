@@ -2,8 +2,10 @@ pipeline {
   agent { docker { image 'mcr.microsoft.com/playwright:focal' } } 
   stages {  
     stage('test') {
-       sh 'npm install'
-       sh 'npm test'
+      steps {
+         sh 'npm install'
+         sh 'npm test'
+      }
     }
   }
 }                                          
