@@ -1,7 +1,6 @@
 import type { PlaywrightTestConfig } from '@playwright/test';
 import { devices } from '@playwright/test';
 
-*/
 const config: PlaywrightTestConfig = {
   /* Run tests in files in parallel */
   fullyParallel: true,

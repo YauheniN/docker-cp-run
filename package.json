@@ -15,6 +15,11 @@
   "bugs": {
     "url": "https://github.com/YauheniN/playwright-docker-cp-run/issues"
   },
+  "scripts": {
+   "test": "playwright test",
+   "test-html-report": "playwright test --reporter=html",
+   "test-json-report": "PLAYWRIGHT_JSON_OUTPUT_NAME=test-results.json playwright test --browser=chromium --reporter=json"
+  },
   "homepage": "https://github.com/YauheniN/playwright-docker-cp-run#readme",
   "devDependencies": {
     "@playwright/test": "^1.25.1",
